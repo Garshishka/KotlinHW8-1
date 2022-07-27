@@ -5,7 +5,7 @@ data class Note(
     val text: String,
     val date: Int,
     val id: Int = 0,
-    val comments: Int = 0,
+    var comments: Int = 0,
 
-    val commentsList: MutableList<Comment> = mutableListOf()
+    var commentsList: MutableList<Comment> = mutableListOf<Comment>()
 )
