@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fc676dde-9af1-49f0-a62e-ec235a91191c" name="Changes" comment="note tests, comment system">
-      <change afterPath="$PROJECT_DIR$/src/test/kotlin/CommentServiceTest.kt" afterDir="false" />
+    <list default="true" id="fc676dde-9af1-49f0-a62e-ec235a91191c" name="Changes" comment="added workflow file">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/CommentService.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/CommentService.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/NoteService.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/NoteService.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/kotlin/NoteServiceTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/NoteServiceTest.kt" afterDir="false" />
     </list>
@@ -81,7 +79,30 @@
       <command value="gradle test jacocoTestReport" />
     </option>
   </component>
-  <component name="RunManager" selected="Kotlin.MainKt">
+  <component name="RunManager" selected="Gradle.KotlinHW8-1 [test jacocoTestReport]">
+    <configuration name="CommentServiceTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;CommentServiceTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
     <configuration name="KotlinHW8-1 [test jacocoTestReport]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -104,7 +125,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="NoteServiceTest.getComments_NoteNotFound" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="NoteServiceTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -117,7 +138,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;NoteServiceTest.getComments_NoteNotFound&quot;" />
+            <option value="&quot;NoteServiceTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -127,7 +148,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="NoteServiceTest.restoreComment_NoteFound (1)" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="NoteServiceTest.restoreComment_NoteFound" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -173,20 +194,13 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="MainKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="MainKt" />
-      <module name="KotlinHW8-1.main" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Kotlin.MainKt" />
         <item itemvalue="Gradle.KotlinHW8-1 [test jacocoTestReport]" />
         <item itemvalue="Gradle.NoteServiceTest.restoreComment_NoteNotFound" />
-        <item itemvalue="Gradle.NoteServiceTest.restoreComment_NoteFound (1)" />
-        <item itemvalue="Gradle.NoteServiceTest.getComments_NoteNotFound" />
+        <item itemvalue="Gradle.NoteServiceTest.restoreComment_NoteFound" />
+        <item itemvalue="Gradle.NoteServiceTest" />
+        <item itemvalue="Gradle.CommentServiceTest" />
       </list>
     </recent_temporary>
   </component>
@@ -213,7 +227,21 @@
       <option name="project" value="LOCAL" />
       <updated>1658935412749</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="comment system tests">
+      <created>1659013972744</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1659013972744</updated>
+    </task>
+    <task id="LOCAL-00004" summary="added workflow file">
+      <created>1659014139078</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1659014139078</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -230,19 +258,17 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial commit, note system" />
     <MESSAGE value="note tests, comment system" />
-    <option name="LAST_COMMIT_MESSAGE" value="note tests, comment system" />
+    <MESSAGE value="comment system tests" />
+    <MESSAGE value="added workflow file" />
+    <option name="LAST_COMMIT_MESSAGE" value="added workflow file" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="kotlin-function">
+        <line-breakpoint enabled="true" type="kotlin-line">
           <url>file://$PROJECT_DIR$/src/test/kotlin/NoteServiceTest.kt</url>
-          <line>187</line>
-          <properties class="NoteServiceTest" method="restoreComment_NoteNotFound">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="6" />
+          <line>188</line>
+          <option name="timeStamp" value="8" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

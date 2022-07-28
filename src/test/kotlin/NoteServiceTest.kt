@@ -190,7 +190,8 @@ class NoteServiceTest {
         CommentService.clearList()
         NoteService.create(testNote1)
 
-        NoteService.createComment(testCommentDeleted)
+        NoteService.createComment(testComment1)
+        NoteService.deleteComment(1)
         NoteService.delete(1)
         NoteService.restoreComment(1)
     }

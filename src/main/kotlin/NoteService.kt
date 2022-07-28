@@ -44,13 +44,13 @@ object NoteService : CrudService<Note>() {
     }
 
     fun deleteComment(cId: Int): Boolean {
-        CommentService.delete(cId)
         val comment = CommentService.getById(cId)
         if (comment != null) {
             val note = getById(comment.noteId) ?: throw NoteNotFoundException("no note with ${comment.noteId}")
             note.comments--
             note.commentsList.remove(comment)
         } //in the all-comments list we mark comment as deleted and then remove it from specific note comment list
+        CommentService.delete(cId)
         return true
     }
 
@@ -70,9 +70,9 @@ object NoteService : CrudService<Note>() {
     }
 
     fun restoreComment(cId: Int): Boolean {
-        CommentService.restore(cId)
         val comment = CommentService.getById(cId)
         val note = getById(comment!!.noteId) ?: throw NoteNotFoundException("no note with ${comment.noteId}")
+        CommentService.restore(cId)
         note.comments++
         note.commentsList.add(comment)
         return true
