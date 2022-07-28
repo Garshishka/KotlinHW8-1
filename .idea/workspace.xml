@@ -4,16 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fc676dde-9af1-49f0-a62e-ec235a91191c" name="Changes" comment="Initial commit, note system">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/CommentService.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/kotlin/NoteServiceTest.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+    <list default="true" id="fc676dde-9af1-49f0-a62e-ec235a91191c" name="Changes" comment="note tests, comment system">
+      <change afterPath="$PROJECT_DIR$/src/test/kotlin/CommentServiceTest.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Comment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Comment.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/CrudService.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/CrudService.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Main.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Note.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Note.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/CommentService.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/CommentService.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/NoteService.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/NoteService.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/kotlin/NoteServiceTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/NoteServiceTest.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,8 +37,8 @@
         <option value="Kotlin Class" />
         <option value="Kotlin Interface" />
         <option value="Kotlin Data Class" />
-        <option value="JUnit4 Test Class" />
         <option value="Kotlin Object" />
+        <option value="JUnit4 Test Class" />
       </list>
     </option>
   </component>
@@ -60,18 +56,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit4",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4": "",
-    "project.structure.last.edited": "Libraries",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.lookFeel"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit4&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4&quot;: &quot;&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -85,7 +81,7 @@
       <command value="gradle test jacocoTestReport" />
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.KotlinHW8-1 [test jacocoTestReport]">
+  <component name="RunManager" selected="Kotlin.MainKt">
     <configuration name="KotlinHW8-1 [test jacocoTestReport]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -108,7 +104,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="NoteServiceTest (1)" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="NoteServiceTest.getComments_NoteNotFound" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -121,7 +117,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;NoteServiceTest&quot;" />
+            <option value="&quot;NoteServiceTest.getComments_NoteNotFound&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -131,7 +127,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="NoteServiceTest.delete_noteFound" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="NoteServiceTest.restoreComment_NoteFound (1)" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -144,7 +140,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;NoteServiceTest.delete_noteFound&quot;" />
+            <option value="&quot;NoteServiceTest.restoreComment_NoteFound&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -154,7 +150,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="NoteServiceTest.delete_noteNotFound" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="NoteServiceTest.restoreComment_NoteNotFound" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -167,7 +163,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;NoteServiceTest.delete_noteNotFound&quot;" />
+            <option value="&quot;NoteServiceTest.restoreComment_NoteNotFound&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -188,9 +184,9 @@
       <list>
         <item itemvalue="Kotlin.MainKt" />
         <item itemvalue="Gradle.KotlinHW8-1 [test jacocoTestReport]" />
-        <item itemvalue="Gradle.NoteServiceTest.delete_noteNotFound" />
-        <item itemvalue="Gradle.NoteServiceTest (1)" />
-        <item itemvalue="Gradle.NoteServiceTest.delete_noteFound" />
+        <item itemvalue="Gradle.NoteServiceTest.restoreComment_NoteNotFound" />
+        <item itemvalue="Gradle.NoteServiceTest.restoreComment_NoteFound (1)" />
+        <item itemvalue="Gradle.NoteServiceTest.getComments_NoteNotFound" />
       </list>
     </recent_temporary>
   </component>
@@ -210,7 +206,14 @@
       <option name="project" value="LOCAL" />
       <updated>1658847649428</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="note tests, comment system">
+      <created>1658935412749</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1658935412749</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -226,6 +229,22 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial commit, note system" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial commit, note system" />
+    <MESSAGE value="note tests, comment system" />
+    <option name="LAST_COMMIT_MESSAGE" value="note tests, comment system" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="kotlin-function">
+          <url>file://$PROJECT_DIR$/src/test/kotlin/NoteServiceTest.kt</url>
+          <line>187</line>
+          <properties class="NoteServiceTest" method="restoreComment_NoteNotFound">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

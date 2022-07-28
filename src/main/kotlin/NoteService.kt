@@ -23,6 +23,10 @@ object NoteService : CrudService<Note>() {
 
     override fun delete(id: Int): Boolean {
         val note = getById(id) ?: throw NoteNotFoundException("no note with $id")
+        //marking comments for this note in all-comments list as deleted
+        for (comment in note.commentsList){
+            CommentService.delete(comment.id)
+        }
         elements.removeAt(elements.indexOf(note))
         return true
     }

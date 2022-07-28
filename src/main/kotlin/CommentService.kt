@@ -20,7 +20,10 @@ object CommentService : CrudService<Comment>() {
 
     override fun delete(id: Int): Boolean {
         val comment = getById(id) ?: throw CommentNotFoundException("no comment with $id")
-        elements[elements.indexOf(comment)].deleted = true
+        val index = elements.indexOf(comment)
+        //checking if "deleted" boolean isn't already in the needed position
+        elements[index].deleted = if (!elements[index].deleted) true
+        else throw CommentWasAlreadyDeleted("this comment was already deleted")
         return true
     }
 
@@ -32,9 +35,14 @@ object CommentService : CrudService<Comment>() {
 
     fun restore(id: Int): Boolean {
         val comment = getById(id) ?: throw CommentNotFoundException("no comment with $id")
-        elements[elements.indexOf(comment)].deleted = false
+        val index = elements.indexOf(comment)
+        //checking if "deleted" boolean isn't already in the needed position
+        elements[index].deleted = if (elements[index].deleted) false
+        else throw CommentIsntDeleted("this comment is not deleted")
         return true
     }
 
     class CommentNotFoundException(message: String) : RuntimeException(message)
+    class CommentWasAlreadyDeleted(message: String) : RuntimeException(message)
+    class CommentIsntDeleted(message: String) : RuntimeException(message)
 }
